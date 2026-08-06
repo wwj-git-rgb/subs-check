@@ -1,0 +1,298 @@
+# Instincts generated from https://github.com/wwj-git-rgb/subs-check
+# Generated: 2026-05-22T17:26:45.331Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: subs-check-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/wwj-git-rgb/subs-check
+---
+
+# Subs Check Commit Length
+
+## Action
+
+Keep commit messages concise (~34 characters)
+
+## Evidence
+
+- Average commit message length: 34 chars
+- Based on 5 commits
+
+---
+id: subs-check-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/wwj-git-rgb/subs-check
+---
+
+# Subs Check Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: subs-check-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/wwj-git-rgb/subs-check
+---
+
+# Subs Check Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: subs-check-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/wwj-git-rgb/subs-check
+---
+
+# Subs Check Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: subs-check-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/wwj-git-rgb/subs-check
+---
+
+# Subs Check Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: subs-check-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: wwj-git-rgb/subs-check
+---
+
+# Subs Check Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Naming conventions: files = camelCase
+
+---
+id: subs-check-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: wwj-git-rgb/subs-check
+---
+
+# Subs Check Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Naming conventions: functions = camelCase
+
+---
+id: subs-check-instinct-class-naming
+trigger: "When defining a new class or struct"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: wwj-git-rgb/subs-check
+---
+
+# Subs Check Instinct Class Naming
+
+## Action
+
+Use PascalCase for class or struct names
+
+## Evidence
+
+- Naming conventions: classes = PascalCase
+
+---
+id: subs-check-instinct-constant-naming
+trigger: "When defining a new constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: wwj-git-rgb/subs-check
+---
+
+# Subs Check Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Naming conventions: constants = SCREAMING_SNAKE_CASE
+
+---
+id: subs-check-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: wwj-git-rgb/subs-check
+---
+
+# Subs Check Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- importStyle: relative
+
+---
+id: subs-check-instinct-export-style
+trigger: "When exporting functions or variables"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: wwj-git-rgb/subs-check
+---
+
+# Subs Check Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- exportStyle: named
+
+---
+id: subs-check-instinct-commit-prefix-feat
+trigger: "When making a commit for a new feature"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: wwj-git-rgb/subs-check
+---
+
+# Subs Check Instinct Commit Prefix Feat
+
+## Action
+
+Prefix the commit message with 'feat'
+
+## Evidence
+
+- Seen in commit: feat(substore): 更新时不覆盖用户在 sub-store 的改动 (#251)
+- Seen in commit: feat: 新增 shuffle-test-order 打乱测试顺序，输出仍保持订阅原序
+
+---
+id: subs-check-instinct-commit-message-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: wwj-git-rgb/subs-check
+---
+
+# Subs Check Instinct Commit Message Length
+
+## Action
+
+Keep the commit message concise, around 34 characters on average
+
+## Evidence
+
+- averageLength: 34
+- Examples: update mihomo, update sub-store to 2.23.19
+
+---
+id: subs-check-instinct-commit-message-format
+trigger: "When writing a commit message for a feature"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: wwj-git-rgb/subs-check
+---
+
+# Subs Check Instinct Commit Message Format
+
+## Action
+
+Use the format 'feat(<scope>): <description>' when applicable
+
+## Evidence
+
+- Seen in commit: feat(substore): 更新时不覆盖用户在 sub-store 的改动 (#251)
+
+---
+id: subs-check-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: wwj-git-rgb/subs-check
+---
+
+# Subs Check Instinct Test Location
+
+## Action
+
+Place test files in a separate test directory
+
+## Evidence
+
+- testLocation: separate
+
